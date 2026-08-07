@@ -1,0 +1,469 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="SaSa — TWO MINDS | ONE VISION. Streetwear de identidad limpia, moderna y urbana.">
+  <title>SaSa — TWO MINDS | ONE VISION</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600&family=Manrope:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <!-- INTRO -->
+  <div class="intro" id="intro" aria-hidden="true">
+    <div class="intro-inner">
+      <div class="shopping-bag">
+        <span class="handle"></span>
+        <img src="assets/sasa-logo.png" alt="SaSa">
+      </div>
+      <div class="intro-copy">
+        <p>¿LISTO PARA VESTIR SASA HOY?</p>
+        <span>TWO MINDS <i></i> ONE VISION</span>
+      </div>
+    </div>
+  </div>
+
+  <!-- HEADER -->
+  <header class="header" id="header">
+    <a href="#inicio" class="header-logo" aria-label="SaSa, inicio">
+      <img src="assets/sasa-logo.png" alt="SaSa">
+    </a>
+
+    <nav class="desktop-nav" aria-label="Navegación principal">
+      <a href="#inicio">Inicio</a>
+      <a href="#gorras">Gorras</a>
+      <a href="#hombres">Hombres</a>
+      <a href="#mujeres">Mujeres</a>
+      <a href="#ninos">Niños</a>
+      <a href="#ninas">Niñas</a>
+      <a href="#historia">Historia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+
+    <div class="header-tools">
+      <button class="tool-button" id="searchButton" aria-label="Buscar">
+        <svg viewBox="0 0 24 24"><circle cx="11" cy="11" r="6.5"/><path d="M16 16l4.5 4.5"/></svg>
+      </button>
+      <button class="account-button" id="accountButton" aria-label="Cuenta">
+        <svg viewBox="0 0 24 24"><circle cx="12" cy="8" r="3.5"/><path d="M5 20c.8-4.1 3.2-6 7-6s6.2 1.9 7 6"/></svg>
+        <span id="accountText">Cuenta</span>
+      </button>
+      <button class="menu-button" id="menuButton" aria-label="Abrir menú" aria-expanded="false">
+        <span></span><span></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- MOBILE MENU -->
+  <div class="mobile-menu" id="mobileMenu" aria-hidden="true">
+    <nav>
+      <a href="#inicio">Inicio</a>
+      <a href="#gorras">Gorras</a>
+      <a href="#hombres">Hombres</a>
+      <a href="#mujeres">Mujeres</a>
+      <a href="#ninos">Niños</a>
+      <a href="#ninas">Niñas</a>
+      <a href="#historia">Historia</a>
+      <a href="#contacto">Contacto</a>
+    </nav>
+    <div class="mobile-signature">
+      <img src="assets/sasa-logo.png" alt="">
+      <span>TWO MINDS · ONE VISION</span>
+    </div>
+  </div>
+
+  <!-- SEARCH -->
+  <div class="search-overlay" id="searchOverlay" aria-hidden="true">
+    <button class="overlay-close" id="searchClose" aria-label="Cerrar búsqueda">×</button>
+    <div class="search-content">
+      <span class="micro">BUSCAR EN SASA</span>
+      <input id="searchInput" type="search" placeholder="¿Qué estás buscando?" autocomplete="off">
+      <p id="searchStatus">Gorras, camisetas, polos, shorts...</p>
+    </div>
+  </div>
+
+  <main>
+    <!-- HERO / EDITORIAL -->
+    <section class="hero" id="inicio">
+      <div class="hero-panel hero-left">
+        <img src="assets/campaign-cap-white.png" alt="Modelo usando gorra SaSa blanca con visera bandana">
+      </div>
+
+      <div class="hero-center">
+        <span class="hero-kicker">SASA — DROP 001</span>
+        <h1>TWO MINDS<br><em>ONE VISION</em></h1>
+        <p>Streetwear hecho para dejar una firma sin decir demasiado.</p>
+        <div class="hero-buttons">
+          <a href="#shop" class="button button-dark">Descubrir colección</a>
+          <a href="#historia" class="button button-glass">Conocer SaSa</a>
+        </div>
+      </div>
+
+      <div class="hero-panel hero-right">
+        <img src="assets/campaign-sakura-cap.png" alt="Modelo usando gorra SaSa negra con flores rosadas">
+      </div>
+
+      <div class="hero-scroll">SCROLL TO DISCOVER <span>↓</span></div>
+    </section>
+
+    <!-- STATEMENT -->
+    <section class="statement">
+      <p>SA</p>
+      <div>
+        <span>TWO MINDS.</span>
+        <span>TWO PERSPECTIVES.</span>
+        <strong>ONE VISION.</strong>
+      </div>
+      <p>SA</p>
+    </section>
+
+    <!-- SHOP -->
+    <section class="shop section" id="shop">
+      <div class="section-title">
+        <span class="micro">SaSa Collection</span>
+        <h2>DROP 001</h2>
+        <p>Piezas esenciales con una identidad visual directa, limpia y reconocible.</p>
+      </div>
+
+      <div class="filter-row">
+        <button class="filter active" data-filter="all">Todo</button>
+        <button class="filter" data-filter="gorras">Gorras</button>
+        <button class="filter" data-filter="hombres">Hombres</button>
+        <button class="filter" data-filter="mujeres">Mujeres</button>
+      </div>
+
+      <div class="product-grid" id="productGrid">
+        <article class="product-card" data-category="hombres mujeres" data-search="polo blanco camisa blanca signature polo sasa">
+          <button class="product-image" data-product="Signature Polo" data-img="assets/product-white-polo.png" data-desc="Polo blanco SaSa con firma pequeña al frente y logo protagonista en espalda.">
+            <img src="assets/product-white-polo.png" alt="Polo blanco SaSa, frente y espalda">
+            <span class="card-tag">NEW</span>
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>UNISEX</span>
+              <h3>Signature Polo</h3>
+            </div>
+            <button class="quick-view" data-product="Signature Polo" data-img="assets/product-white-polo.png" data-desc="Polo blanco SaSa con firma pequeña al frente y logo protagonista en espalda.">Ver</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="hombres" data-search="short negro shorts black statement sasa">
+          <button class="product-image" data-product="Statement Shorts" data-img="assets/product-black-shorts.png" data-desc="Short negro con gráfica SaSa bordada de gran formato y acabado streetwear.">
+            <img src="assets/product-black-shorts.png" alt="Short negro SaSa con logo grande">
+            <span class="card-tag">DROP 001</span>
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>HOMBRE</span>
+              <h3>Statement Shorts</h3>
+            </div>
+            <button class="quick-view" data-product="Statement Shorts" data-img="assets/product-black-shorts.png" data-desc="Short negro con gráfica SaSa bordada de gran formato y acabado streetwear.">Ver</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="hombres mujeres" data-search="camiseta negra black tee rib sasa logo">
+          <button class="product-image" data-product="Rib Tee Black" data-img="assets/product-black-tee.png" data-desc="Camiseta negra de textura acanalada con logo SaSa discreto al pecho.">
+            <img src="assets/product-black-tee.png" alt="Camiseta negra SaSa">
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>UNISEX</span>
+              <h3>Rib Tee Black</h3>
+            </div>
+            <button class="quick-view" data-product="Rib Tee Black" data-img="assets/product-black-tee.png" data-desc="Camiseta negra de textura acanalada con logo SaSa discreto al pecho.">Ver</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="gorras mujeres" data-search="gorra negra flores rosa pink sakura sasa">
+          <button class="product-image" data-product="Sakura Cap" data-img="assets/product-sakura-cap.png" data-desc="Gorra negra SaSa con bordado blanco, acentos rosados y flores decorativas.">
+            <img src="assets/product-sakura-cap.png" alt="Gorra negra SaSa con flores rosadas">
+            <span class="card-tag">SASA PINK</span>
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>GORRAS</span>
+              <h3>Sakura Cap</h3>
+            </div>
+            <button class="quick-view" data-product="Sakura Cap" data-img="assets/product-sakura-cap.png" data-desc="Gorra negra SaSa con bordado blanco, acentos rosados y flores decorativas.">Ver</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="hombres mujeres" data-search="short gris shorts gray essential sasa">
+          <button class="product-image" data-product="Essential Shorts" data-img="assets/product-gray-shorts.png" data-desc="Short gris de corte relajado con logo SaSa vertical y detalle de estrella.">
+            <img src="assets/product-gray-shorts.png" alt="Short gris SaSa">
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>UNISEX</span>
+              <h3>Essential Shorts</h3>
+            </div>
+            <button class="quick-view" data-product="Essential Shorts" data-img="assets/product-gray-shorts.png" data-desc="Short gris de corte relajado con logo SaSa vertical y detalle de estrella.">Ver</button>
+          </div>
+        </article>
+
+        <article class="product-card" data-category="gorras hombres mujeres" data-search="gorra blanca bandana negra snapback sasa">
+          <button class="product-image" data-product="Bandana Cap" data-img="assets/product-bandana-cap.png" data-desc="Gorra blanca y negra SaSa con visera de estampado bandana y bordado frontal.">
+            <img src="assets/product-bandana-cap.png" alt="Gorra blanca y negra SaSa con visera bandana">
+          </button>
+          <div class="product-meta">
+            <div>
+              <span>GORRAS</span>
+              <h3>Bandana Cap</h3>
+            </div>
+            <button class="quick-view" data-product="Bandana Cap" data-img="assets/product-bandana-cap.png" data-desc="Gorra blanca y negra SaSa con visera de estampado bandana y bordado frontal.">Ver</button>
+          </div>
+        </article>
+      </div>
+
+      <div class="no-results" id="noResults">
+        No encontramos una pieza que coincida con tu búsqueda.
+      </div>
+    </section>
+
+    <!-- MEN CAMPAIGN -->
+    <section class="campaign campaign-dark" id="hombres">
+      <div class="campaign-media">
+        <img src="assets/campaign-black-shorts.png" alt="Modelo vistiendo shorts negros SaSa">
+      </div>
+      <div class="campaign-copy">
+        <span class="micro">SASA MEN</span>
+        <h2>Quiet top.<br>Statement bottom.</h2>
+        <p>La silueta se mantiene limpia para que una sola pieza tenga toda la presencia.</p>
+        <a href="#shop" class="underline-link filter-link" data-filter-target="hombres">Comprar hombre <span>↗</span></a>
+      </div>
+      <div class="campaign-detail">
+        <img src="assets/campaign-black-tee.png" alt="Modelo vistiendo camiseta negra SaSa">
+      </div>
+    </section>
+
+    <!-- CAPS -->
+    <section class="caps section" id="gorras">
+      <div class="caps-heading">
+        <span class="micro">HEADWEAR</span>
+        <h2>La firma<br>está arriba.</h2>
+      </div>
+      <div class="caps-card">
+        <img src="assets/campaign-cap-white.png" alt="Retrato con gorra SaSa Bandana">
+        <div>
+          <span>01 / BANDANA</span>
+          <a href="#shop" class="filter-link" data-filter-target="gorras">Explorar gorras ↗</a>
+        </div>
+      </div>
+      <div class="caps-card offset">
+        <img src="assets/campaign-sakura-cap.png" alt="Retrato con gorra SaSa Sakura">
+        <div>
+          <span>02 / SAKURA</span>
+          <a href="#shop" class="filter-link" data-filter-target="gorras">Explorar gorras ↗</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ESSENTIAL / WOMEN -->
+    <section class="editorial-pair" id="mujeres">
+      <article>
+        <img src="assets/campaign-gray-shorts.png" alt="Modelo vistiendo shorts grises SaSa">
+        <div class="editorial-caption">
+          <span>SASA ESSENTIAL</span>
+          <h3>Neutral no significa invisible.</h3>
+          <a href="#shop" class="filter-link" data-filter-target="mujeres">Descubrir ↗</a>
+        </div>
+      </article>
+
+      <article>
+        <img src="assets/campaign-white-polo.png" alt="Modelo vistiendo polo blanco SaSa">
+        <div class="editorial-caption light">
+          <span>THE WHITE EDIT</span>
+          <h3>Menos ruido.<br>Más identidad.</h3>
+          <a href="#shop" class="filter-link" data-filter-target="mujeres">Descubrir ↗</a>
+        </div>
+      </article>
+    </section>
+
+    <!-- KIDS -->
+    <section class="kids section">
+      <div class="kids-box" id="ninos">
+        <span class="micro">NIÑOS</span>
+        <h2>SaSa Mini.</h2>
+        <p>La visión de la marca adaptada a una nueva generación.</p>
+        <span class="soon">PRÓXIMAMENTE</span>
+      </div>
+      <div class="kids-box beige" id="ninas">
+        <span class="micro">NIÑAS</span>
+        <h2>SaSa Mini.</h2>
+        <p>Comodidad, proporciones suaves y el mismo lenguaje SaSa.</p>
+        <span class="soon">PRÓXIMAMENTE</span>
+      </div>
+    </section>
+
+    <!-- STORY -->
+    <section class="story" id="historia">
+      <div class="story-title">
+        <span class="micro light-micro">THE STORY</span>
+        <h2>Sa + Sa</h2>
+        <p>TWO MINDS<br>ONE VISION</p>
+      </div>
+
+      <div class="story-body">
+        <p class="lead">
+          SaSa nació de una amistad de muchos años entre dos amigos que comparten el mismo nombre: Santiago.
+        </p>
+        <p>
+          Antes de la ropa hubo ideas, pruebas y distintos intentos de negocio. Cada proyecto les dejó algo:
+          aprender a crear, corregir, escuchar y volver a empezar. Hasta que apareció una idea que sí se sintió
+          como de ambos: construir una marca con identidad propia.
+        </p>
+        <p>
+          El nombre llegó sin necesidad de complicarlo. <strong>Sa</strong> por un Santiago.
+          <strong>Sa</strong> por el otro. SaSa representa dos maneras de pensar que no tienen que ser iguales
+          para avanzar hacia el mismo lugar.
+        </p>
+        <p>
+          La visión es crear prendas que se reconozcan por su actitud: siluetas cómodas, tonos neutros,
+          detalles fuertes y una firma visual que pueda vivir desde una camiseta limpia hasta una gorra o
+          un short protagonista.
+        </p>
+        <blockquote>“DOS MENTES. UNA VISIÓN.”</blockquote>
+      </div>
+    </section>
+
+    <!-- CONTACT / NEWSLETTER -->
+    <section class="contact section" id="contacto">
+      <div class="contact-main">
+        <span class="micro">CLIENT SERVICES</span>
+        <h2>Hablemos.</h2>
+        <p>Pedidos, disponibilidad, colaboraciones o cualquier consulta sobre SaSa.</p>
+      </div>
+
+      <div class="contact-links">
+        <a href="https://wa.me/50684472728" target="_blank" rel="noopener">
+          <span>WHATSAPP / TELÉFONO</span>
+          <strong>8447 2728</strong>
+          <b>↗</b>
+        </a>
+        <a href="mailto:castillomurillosantiago@gmail.com">
+          <span>EMAIL</span>
+          <strong>castillomurillosantiago@gmail.com</strong>
+          <b>↗</b>
+        </a>
+      </div>
+
+      <form class="newsletter" id="newsletterForm">
+        <span class="micro">SASA UPDATES</span>
+        <h3>Entérate del próximo drop.</h3>
+        <div class="newsletter-row">
+          <input type="email" id="newsletterEmail" placeholder="Tu correo" required>
+          <button type="submit">Suscribirme</button>
+        </div>
+      </form>
+    </section>
+  </main>
+
+  <!-- FOOTER -->
+  <footer>
+    <a href="#inicio" class="footer-logo">
+      <img src="assets/sasa-logo.png" alt="SaSa">
+    </a>
+
+    <div class="footer-links">
+      <a href="#gorras">Gorras</a>
+      <a href="#hombres">Hombres</a>
+      <a href="#mujeres">Mujeres</a>
+      <a href="#historia">Historia</a>
+      <a href="#contacto">Contacto</a>
+    </div>
+
+    <div class="footer-bottom">
+      <span>© <span id="year"></span> SASA</span>
+      <strong>TWO MINDS · ONE VISION</strong>
+      <a href="#inicio">VOLVER ARRIBA ↑</a>
+    </div>
+  </footer>
+
+  <!-- PRODUCT MODAL -->
+  <div class="modal-shell" id="productModal" aria-hidden="true">
+    <div class="product-modal">
+      <button class="modal-close" id="productClose" aria-label="Cerrar">×</button>
+      <div class="product-modal-image">
+        <img id="productModalImage" src="" alt="">
+      </div>
+      <div class="product-modal-copy">
+        <span class="micro">SASA / DROP 001</span>
+        <h2 id="productModalTitle"></h2>
+        <p id="productModalDescription"></p>
+        <div class="product-options">
+          <span>Disponibilidad y tallas por consulta.</span>
+          <span>Entrega coordinada directamente con SaSa.</span>
+        </div>
+        <a id="productWhatsApp" href="#" target="_blank" rel="noopener" class="button button-dark full">
+          Consultar por WhatsApp
+        </a>
+      </div>
+    </div>
+  </div>
+
+  <!-- ACCOUNT -->
+  <div class="modal-shell" id="authModal" aria-hidden="true">
+    <div class="auth-modal">
+      <button class="modal-close" id="authClose" aria-label="Cerrar">×</button>
+
+      <div class="auth-top">
+        <img src="assets/sasa-logo.png" alt="SaSa">
+        <span>TWO MINDS · ONE VISION</span>
+      </div>
+
+      <div class="auth-tabs">
+        <button class="auth-tab active" data-auth="register">Registrarme</button>
+        <button class="auth-tab" data-auth="login">Iniciar sesión</button>
+      </div>
+
+      <form class="auth-form active" id="registerForm">
+        <span class="micro">CREA TU CUENTA PRIMERO</span>
+        <h2>Únete a SaSa.</h2>
+
+        <label>Nombre
+          <input id="registerName" type="text" placeholder="Tu nombre" required>
+        </label>
+        <label>Correo
+          <input id="registerEmail" type="email" placeholder="correo@ejemplo.com" required>
+        </label>
+        <label>Contraseña
+          <input id="registerPassword" type="password" placeholder="Mínimo 6 caracteres" minlength="6" required>
+        </label>
+
+        <button type="submit" class="button button-dark full">Crear cuenta</button>
+        <p class="auth-note">Demo local: esta versión guarda la cuenta solamente en tu navegador.</p>
+      </form>
+
+      <form class="auth-form" id="loginForm">
+        <span class="micro">BIENVENIDO DE NUEVO</span>
+        <h2>Inicia sesión.</h2>
+
+        <label>Correo
+          <input id="loginEmail" type="email" placeholder="correo@ejemplo.com" required>
+        </label>
+        <label>Contraseña
+          <input id="loginPassword" type="password" placeholder="Tu contraseña" required>
+        </label>
+
+        <button type="submit" class="button button-dark full">Entrar</button>
+        <p class="auth-note" id="loginMessage">Si todavía no tienes una cuenta, regístrate primero.</p>
+      </form>
+
+      <div class="profile-panel" id="profilePanel">
+        <span class="micro">MI CUENTA</span>
+        <h2>Hola, <span id="profileName">SaSa</span>.</h2>
+        <p>Tu sesión está activa en este dispositivo.</p>
+        <button class="button button-outline full" id="logoutButton">Cerrar sesión</button>
+      </div>
+    </div>
+  </div>
+
+  <div class="toast" id="toast" role="status"></div>
+
+  <script src="script.js"></script>
+</body>
+</html>
